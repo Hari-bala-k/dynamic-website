@@ -3,184 +3,310 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>NovaShop</title>
+  <title>ShopNova</title>
 
-  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="app-shell">
+<header class="navbar">
 
-    <!-- HEADER -->
+  <div class="logo">
+    <div class="logo-box">S</div>
+    <span>ShopNova</span>
+  </div>
 
-    <header class="site-header">
+  <nav class="nav-links">
+    <a href="#">Home</a>
+    <a href="#">Shop</a>
+    <a href="#">Collections</a>
+    <a href="/HTML/contact.html">Contact</a>
+  </nav>
 
-      <div class="header-inner">
+  <div class="nav-actions">
 
-        <a href="#" class="brand-logo">
-          <div class="brand-mark">N</div>
-          <span>NovaShop</span>
-        </a>
+    <div class="search-box">
+      <input type="text" placeholder="Search products...">
+      <button>⌕</button>
+    </div>
 
-        <nav class="nav-links">
-          <a href="#">Home</a>
-          <a href="#productControls">Products</a>
-          <a href="#">Support</a>
-        </nav>
-
-        <div class="header-actions">
-
-          <div class="search-field">
-            <input
-            type="search"
-            id="searchInput"
-            placeholder="Search products...">
-
-            <button id="searchButton">
-              🔍
-            </button>
-          </div>
-
-          <button class="icon-button">
-            ♡
-          </button>
-
-          <button class="icon-button">
-            🛒
-            <span class="badge">0</span>
-          </button>
-
-          <button class="icon-button">
-            🌙
-          </button>
-
-        </div>
-
-      </div>
-
-    </header>
-
-    <!-- HERO -->
-
-    <section class="hero-section">
-
-      <div class="hero-copy">
-
-        <span class="eyebrow">
-          BEST SHOPPING EXPERIENCE
-        </span>
-
-        <h1>
-          Discover Premium Products With Modern Style.
-        </h1>
-
-        <p>
-          Explore trending collections with smooth
-          animations, responsive layouts and premium UI design.
-        </p>
-
-        <div class="hero-actions">
-
-          <button class="btn btn-primary">
-            Shop Now
-          </button>
-
-          <button class="btn btn-secondary">
-            View Cart
-          </button>
-
-        </div>
-
-      </div>
-
-      <div class="promo-card">
-
-        <span class="promo-label">
-          🔥 Trending Offer
-        </span>
-
-        <h2>
-          Up To 30% Off Electronics
-        </h2>
-
-        <p>
-          Premium gadgets, accessories and smart devices
-          available at amazing prices.
-        </p>
-
-      </div>
-
-    </section>
-
-    <!-- PRODUCTS -->
-
-    <section class="product-controls" id ="productControls">
-
-      <div class="controls-row">
-
-        <div>
-          <h2>Trending Products</h2>
-          <p>Modern collection with premium UI.</p>
-        </div>
-
-        <button class="btn btn-secondary">
-          Wishlist
-        </button>
-
-      </div>
-
-    </section>
-
-    <section class="products-grid">
-
-    </section>
-
-    <!-- FOOTER -->
-
-    <footer class="site-footer">
-
-      <div class="footer-grid">
-
-        <div>
-          <h3>NovaShop</h3>
-
-          <p>
-            Modern shopping experience with
-            elegant responsive design.
-          </p>
-        </div>
-
-        <div>
-          <h4>Quick Links</h4>
-
-          <a href="#">Home</a>
-          <a href="#">Products</a>
-          <a href="#">Support</a>
-        </div>
-
-        <div>
-          <h4>Social</h4>
-
-          <a href="#">Instagram</a>
-          <a href="#">Twitter</a>
-          <a href="#">LinkedIn</a>
-        </div>
-
-      </div>
-
-      <p class="footer-note">
-        © 2026 NovaShop. All rights reserved.
-      </p>
-
-    </footer>
+    <button class="circle-btn">♡</button>
+    <button class="circle-btn cart-btn">
+      🛒
+      <span>2</span>
+    </button>
 
   </div>
-   <script src="script.js"></script>
-</body>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="hero-left">
+
+    <span class="hero-tag">
+      FUTURE OF ONLINE SHOPPING
+    </span>
+
+    <h1>
+      Discover Luxury <br>
+      Products With <span>Modern UI</span>
+    </h1>
+
+    <p>
+      Premium shopping experience with beautiful animations,
+      dark aesthetics and futuristic design layouts.
+    </p>
+
+    <div class="hero-buttons">
+
+      <button class="primary-btn">
+        Explore Now
+      </button>
+
+      <button class="secondary-btn">
+        View Collection
+      </button>
+
+    </div>
+
+    <div class="hero-stats">
+
+      <div>
+        <h2>10K+</h2>
+        <p>Products</p>
+      </div>
+
+      <div>
+        <h2>5K+</h2>
+        <p>Customers</p>
+      </div>
+
+      <div>
+        <h2>99%</h2>
+        <p>Satisfaction</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="hero-right">
+
+    <div class="floating-card card-1">
+      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800&auto=format&fit=crop" alt="">
+    </div>
+
+    <div class="floating-card card-2">
+      <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=800&auto=format&fit=crop" alt="">
+    </div>
+
+    <div class="offer-card">
+
+      <span>🔥 TRENDING DEAL</span>
+
+      <h2>30% OFF</h2>
+
+      <p>
+        Smart gadgets & modern accessories.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CATEGORY -->
+
+<section class="categories">
+
+  <div class="section-title">
+    <span>POPULAR CATEGORIES</span>
+    <h2>Shop By Collection</h2>
+  </div>
+
+  <div class="category-grid">
+
+    <div class="category-card">
+      <h3>Electronics</h3>
+      <p>120+ Products</p>
+    </div>
+
+    <div class="category-card">
+      <h3>Fashion</h3>
+      <p>80+ Products</p>
+    </div>
+
+    <div class="category-card">
+      <h3>Gaming</h3>
+      <p>40+ Products</p>
+    </div>
+
+    <div class="category-card">
+      <h3>Accessories</h3>
+      <p>95+ Products</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PRODUCTS -->
+
+<section class="products">
+
+  <div class="section-title">
+    <span>FEATURED PRODUCTS</span>
+    <h2>Trending Products</h2>
+  </div>
+
+  <div class="product-grid">
+
+    <div class="product-card">
+
+      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800&auto=format&fit=crop">
+
+      <div class="product-info">
+
+        <h3>Premium Sneakers</h3>
+
+        <p>
+          Modern stylish sneaker collection.
+        </p>
+
+        <div class="product-bottom">
+
+          <h4>$120</h4>
+
+          <button>Add</button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="product-card">
+
+      <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=800&auto=format&fit=crop">
+
+      <div class="product-info">
+
+        <h3>Smart Watch</h3>
+
+        <p>
+          Elegant modern smartwatch design.
+        </p>
+
+        <div class="product-bottom">
+
+          <h4>$220</h4>
+
+          <button>Add</button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="product-card">
+
+      <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop">
+
+      <div class="product-info">
+
+        <h3>Wireless Headset</h3>
+
+        <p>
+          High quality immersive audio.
+        </p>
+
+        <div class="product-bottom">
+
+          <h4>$150</h4>
+
+          <button>Add</button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- NEWSLETTER -->
+
+<section class="newsletter">
+
+  <div class="newsletter-content">
+
+    <span>GET UPDATES</span>
+
+    <h2>
+      Subscribe For Latest Offers
+    </h2>
+
+    <div class="newsletter-box">
+
+      <input type="email" placeholder="Enter your email">
+
+      <button>
+        Subscribe
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+  <div class="footer-grid">
+
+    <div>
+      <h3>ShopNova</h3>
+
+      <p>
+        Futuristic eCommerce platform with modern
+        dark UI and premium shopping experience.
+      </p>
+    </div>
+
+    <div>
+      <h4>Company</h4>
+
+      <a href="#">About</a>
+      <a href="#">Shop</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div>
+      <h4>Social</h4>
+
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+      <a href="#">LinkedIn</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 ShopNova. All Rights Reserved.
+  </div>
+
+</footer>
 </html>
