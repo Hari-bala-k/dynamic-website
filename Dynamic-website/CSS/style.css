@@ -7,6 +7,98 @@
   box-sizing:border-box;
 }
 
+/* HERO TITLE HIGHLIGHT */
+
+.hero h1 span{
+  color:oklch(93.64% 0.20193 109.753);
+}
+
+/* NAVBAR HOVER */
+
+.nav-links a:hover{
+  color:oklch(93.64% 0.20193 109.753);
+}
+
+.nav-links a::after{
+  background:oklch(93.64% 0.20193 109.753);
+}
+
+/* SEARCH BUTTON */
+
+.search-box button{
+  background:oklch(93.64% 0.20193 109.753);
+  color:black;
+}
+
+/* PRIMARY BUTTON */
+
+.primary-btn{
+  background:oklch(93.64% 0.20193 109.753);
+  color:black;
+}
+
+/* SECONDARY BUTTON HOVER */
+
+.secondary-btn:hover{
+  background:oklch(93.64% 0.20193 109.753);
+  color:black;
+}
+
+/* CATEGORY CARD HOVER */
+
+.category-card:hover{
+  border-color:oklch(93.64% 0.20193 109.753);
+  box-shadow:0 10px 30px rgba(210,255,120,.12);
+}
+
+/* PRODUCT BUTTON */
+
+.product-bottom button{
+  background:oklch(93.64% 0.20193 109.753);
+  color:black;
+}
+
+/* PRODUCT PRICE */
+
+.product-bottom h4{
+  color:oklch(93.64% 0.20193 109.753);
+}
+
+/* NEWSLETTER BUTTON */
+
+.newsletter-box button{
+  background:oklch(93.64% 0.20193 109.753);
+  color:black;
+}
+
+/* SECTION TITLE */
+
+.section-title h2{
+  color:white;
+}
+
+.section-title span{
+  color:oklch(93.64% 0.20193 109.753);
+}
+
+/* FOOTER LINKS */
+
+.footer a:hover{
+  color:oklch(93.64% 0.20193 109.753);
+}
+
+/* OFFER CARD */
+
+.offer-card h2{
+  color:white;
+}
+
+/* GLOW EFFECT */
+
+.glow-2{
+  background:oklch(93.64% 0.20193 109.753);
+  opacity:.22;
+}
 html{
   scroll-behavior:smooth;
 }
@@ -79,8 +171,8 @@ body{
   justify-content:center;
   align-items:center;
 
-  background:white;
-  color:black;
+  background:oklch(93.64% 0.20193 109.753);
+  color:rgb(9, 0, 0);
 
   font-weight:800;
   font-size:1.2rem;
@@ -197,7 +289,7 @@ body{
 
   border-radius:50%;
 
-  background:white;
+  background:oklch(93.64% 0.20193 109.753);
   color:black;
 
   display:flex;
@@ -246,7 +338,7 @@ body{
 }
 
 .hero h1 span{
-  color:#9d9d9d;
+  color:oklch(93.64% 0.20193 109.753);
 }
 
 .hero p{
@@ -288,13 +380,13 @@ body{
 
 .secondary-btn{
   background:#111111;
-  color:white;
+  color: oklch(93.64% 0.20193 109.753);
 
   border:1px solid rgba(255,255,255,.08);
 }
 
 .secondary-btn:hover{
-  background:white;
+  background:oklch(93.64% 0.20193 109.753);
   color:black;
 }
 
@@ -312,7 +404,7 @@ body{
 
 .hero-stats p{
   margin:0;
-  color:#9e9e9e;
+  color:oklch(93.64% 0.20193 109.753);
   font-size:.95rem;
 }
 
@@ -339,7 +431,7 @@ body{
 .floating-card img{
   width:100%;
   height:100%;
-  object-fit:cover;
+  object-fit: cover;
 }
 
 .card-1{
@@ -347,7 +439,7 @@ body{
   height:360px;
 
   top:0;
-  left:40px;
+  left:10px;
 
   transform:rotate(-10deg);
 }
@@ -393,7 +485,7 @@ body{
 }
 
 .offer-card p{
-  color:#a5a5a5;
+  color:oklch(93.64% 0.20193 109.753);
   line-height:1.7;
 }
 
@@ -409,7 +501,7 @@ section{
 }
 
 .section-title span{
-  color:#9a9a9a;
+  color:oklch(93.64% 0.20193 109.753);
   letter-spacing:2px;
   font-size:.85rem;
 }

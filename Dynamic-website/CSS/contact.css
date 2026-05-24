@@ -2,6 +2,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
+:root{
+  --primary:oklch(93.64% 0.20193 109.753);
+  --primary-glow:rgba(210,255,120,.18);
+  --dark:#050505;
+  --card:#111111;
+  --text:#ffffff;
+  --muted:#b0b0b0;
+}
+
 *{
   margin:0;
   padding:0;
@@ -12,29 +21,78 @@ html{
   scroll-behavior:smooth;
 }
 
-/* ADD THIS INSIDE BODY */
+/* REMOVE BACKGROUND SHADOW OVERLAY */
+
 body{
   font-family:'Inter',sans-serif;
 
   background:
   linear-gradient(
-  rgba(0,0,0,.68),
-  rgba(0,0,0,.75)
+  rgba(0,0,0,.75),
+  rgba(0,0,0,.78)
   ),
-
   url('/Media/background.png');
 
   background-size:cover;
   background-position:center;
-  background-repeat:no-repeat;
   background-attachment:fixed;
 
-  color:white;
+  color:var(--text);
+
   overflow-x:hidden;
 }
-.premium-contact{
-  backdrop-filter:blur(1px);
+
+/* REMOVE EXTRA DARK OVERLAY */
+
+body::before,
+body::after{
+  display:none;
 }
+
+/* GLOW */
+
+body::before{
+  content:"";
+  position:fixed;
+
+  top:-200px;
+  left:-150px;
+
+  width:500px;
+  height:500px;
+
+  border-radius:50%;
+
+  background:var(--primary);
+
+  filter:blur(140px);
+
+  opacity:.12;
+
+  z-index:-1;
+}
+
+body::after{
+  content:"";
+  position:fixed;
+
+  bottom:-220px;
+  right:-150px;
+
+  width:500px;
+  height:500px;
+
+  border-radius:50%;
+
+  background:var(--primary);
+
+  filter:blur(150px);
+
+  opacity:.10;
+
+  z-index:-1;
+}
+
 /* NAVBAR */
 
 .navbar{
@@ -51,9 +109,9 @@ body{
 
   backdrop-filter:blur(14px);
 
-  background:rgba(5,5,5,.88);
+  background:rgba(5,5,5,.78);
 
-  border-bottom:1px solid rgba(255,204,0,.10);
+  border-bottom:1px solid rgba(210,255,120,.12);
 }
 
 /* LOGO */
@@ -68,8 +126,8 @@ body{
 }
 
 .logo-box{
-  width:42px;
-  height:42px;
+  width:44px;
+  height:44px;
 
   border-radius:14px;
 
@@ -77,14 +135,14 @@ body{
   justify-content:center;
   align-items:center;
 
-  background:#ffcc00;
+  background:var(--primary);
   color:black;
 
   font-size:1.1rem;
   font-weight:800;
 
   box-shadow:
-  0 0 20px rgba(255,204,0,.25);
+  0 0 25px rgba(241, 241, 77, 0.28);
 }
 
 /* NAV LINKS */
@@ -109,7 +167,7 @@ body{
 }
 
 .nav-links a:hover{
-  color:#ffcc00;
+  color:var(--primary);
 }
 
 .nav-links a::after{
@@ -122,7 +180,7 @@ body{
   width:0%;
   height:2px;
 
-  background:#ffcc00;
+  background:var(--primary);
 
   transition:.35s;
 }
@@ -143,6 +201,8 @@ body{
   align-items:center;
 
   padding:120px 7%;
+
+  backdrop-filter:blur(2px);
 }
 
 /* LEFT SIDE */
@@ -154,11 +214,11 @@ body{
 
   border-radius:40px;
 
-  background:rgba(255,204,0,.08);
+  background:rgba(210,255,120,.08);
 
-  border:1px solid rgba(255,204,0,.15);
+  border:1px solid rgba(210,255,120,.18);
 
-  color:#ffdd66;
+  color:var(--primary);
 
   font-size:.82rem;
   letter-spacing:1px;
@@ -176,11 +236,11 @@ body{
 }
 
 .contact-left h1 span{
-  color:#ffcc00;
+  color:var(--primary);
 }
 
 .contact-left p{
-  color:#b0b0b0;
+  color:var(--muted);
 
   line-height:1.9;
 
@@ -191,32 +251,38 @@ body{
   max-width:620px;
 }
 
-/* INFO BOXES */
+/* INFO GRID */
 
 .contact-info-grid{
   display:grid;
   grid-template-columns:repeat(2,1fr);
   gap:22px;
 }
+
 .info-box{
+  padding:28px;
+
+  border-radius:24px;
+
   background:
   linear-gradient(
   180deg,
   rgba(17,17,17,.82),
   rgba(8,8,8,.82)
   );
-}
 
+  border:1px solid rgba(255,255,255,.05);
+
+  transition:.35s;
+}
 
 .info-box:hover{
   transform:translateY(-8px);
 
-  background:#151515;
-
-  border-color:rgba(255,204,0,.20);
+  border-color:rgba(210,255,120,.18);
 
   box-shadow:
-  0 12px 30px rgba(255,204,0,.08);
+  0 15px 35px rgba(210,255,120,.08);
 }
 
 .info-box h3{
@@ -254,7 +320,7 @@ body{
   #080808
   );
 
-  border:1px solid rgba(255,204,0,.08);
+  border:1px solid rgba(210,255,120,.10);
 
   box-shadow:
   0 25px 60px rgba(0,0,0,.55);
@@ -297,12 +363,12 @@ body{
 
 .input-box input:focus,
 .input-box textarea:focus{
-  border-color:rgba(255,204,0,.35);
+  border-color:rgba(210,255,120,.35);
 
   background:#1a1a1a;
 
   box-shadow:
-  0 0 0 4px rgba(255,204,0,.08);
+  0 0 0 4px rgba(210,255,120,.08);
 }
 
 .input-box textarea{
@@ -320,7 +386,7 @@ body{
   border:none;
   border-radius:18px;
 
-  background:#ffcc00;
+  background:var(--primary);
   color:black;
 
   font-size:1rem;
@@ -331,16 +397,14 @@ body{
   transition:.35s;
 
   box-shadow:
-  0 10px 30px rgba(255,204,0,.18);
+  0 10px 30px rgba(210,255,120,.18);
 }
 
 .premium-form button:hover{
   transform:translateY(-4px);
 
-  background:#ffd633;
-
   box-shadow:
-  0 15px 40px rgba(255,204,0,.25);
+  0 15px 40px rgba(210,255,120,.25);
 }
 
 /* RESPONSIVE */
