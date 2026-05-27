@@ -1,0 +1,366 @@
+/* HOT DEAL PAGE */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#06070d;
+    color:white;
+    font-family:'Inter',sans-serif;
+    overflow-x:hidden;
+}
+
+/* HERO */
+
+.deal-hero{
+    height:90vh;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:0 8%;
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.75)),
+    url('https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1800&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+}
+
+.deal-content{
+    position:relative;
+    z-index:2;
+    max-width:700px;
+    text-align:center;
+}
+
+.deal-tag{
+    display:inline-block;
+    padding:12px 24px;
+    border-radius:50px;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.1);
+    margin-bottom:25px;
+    font-size:14px;
+    letter-spacing:2px;
+    color:oklch(93.64% 0.20193 109.753);
+}
+
+.deal-content h1{
+    font-size:75px;
+    line-height:1.1;
+    font-weight:800;
+    margin-bottom:25px;
+}
+
+.deal-content h1 span{
+    background:linear-gradient(to left,#fa4141,oklch(93.64% 0.20193 109.753));
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.deal-content p{
+    color:#b9b9c9;
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:40px;
+}
+
+/* BUTTONS */
+
+.deal-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.primary-btn,
+.secondary-btn{
+    padding:16px 34px;
+    border:none;
+    border-radius:60px;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.4s;
+}
+
+.primary-btn{
+    background:linear-gradient(oklch(93.64% 0.20193 109.753));
+    color:rgb(17, 4, 4);
+}
+
+.primary-btn:hover{
+    transform:translateY(-5px);
+}
+
+.secondary-btn{
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.1);
+    color:white;
+}
+
+.secondary-btn:hover{
+    background:rgba(255,255,255,.12);
+}
+
+/* SECTION TITLE */
+
+.section-title{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.section-title span{
+    color:#7c4dff;
+    letter-spacing:2px;
+    font-size:14px;
+}
+
+.section-title h2{
+    font-size:52px;
+    margin-top:15px;
+}
+
+/* FLASH DEALS */
+
+.flash-deals{
+    padding:120px 8%;
+}
+
+.deal-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:35px;
+}
+
+.deal-card{
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.06);
+    border-radius:28px;
+    overflow:hidden;
+    transition:.4s;
+    position:relative;
+    backdrop-filter:blur(10px);
+}
+
+.deal-card:hover{
+    transform:translateY(-10px);
+    border-color:#7c4dff;
+    box-shadow:0 15px 40px rgba(124,77,255,.2);
+}
+
+.deal-card img{
+    width:100%;
+    height:340px;
+    object-fit:cover;
+}
+
+.deal-info{
+    padding:28px;
+}
+
+.deal-info h3{
+    font-size:26px;
+    margin-bottom:12px;
+}
+
+.deal-info p{
+    color:#b9b9c9;
+    line-height:1.7;
+    margin-bottom:25px;
+}
+
+.deal-badge{
+    position:absolute;
+    top:20px;
+    left:20px;
+    padding:10px 18px;
+    border-radius:40px;
+    background:linear-gradient(to right,#ff3d81,#ff7b00);
+    font-size:13px;
+    font-weight:700;
+    z-index:5;
+}
+
+.price-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.old-price{
+    text-decoration:line-through;
+    color:#777;
+    font-size:14px;
+}
+
+.price-row h4{
+    font-size:28px;
+    margin-top:5px;
+}
+
+.price-row button{
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:linear-gradient(to right,#7c4dff,#00d4ff);
+    color:white;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.price-row button:hover{
+    transform:scale(1.08);
+}
+
+/* BANNER */
+
+.mega-banner{
+    padding:0 8% 120px;
+}
+
+.banner-content{
+    padding:100px 8%;
+    border-radius:35px;
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.75)),
+    url('https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1800&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    text-align:center;
+}
+
+.banner-content span{
+    color:#00d4ff;
+    letter-spacing:2px;
+}
+
+.banner-content h2{
+    font-size:58px;
+    margin:25px 0;
+    line-height:1.2;
+}
+
+.banner-content p{
+    color:#c7c7d8;
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+/* TOP PICKS */
+
+.top-picks{
+    padding:0 8% 120px;
+}
+
+.pick-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.pick-card{
+    padding:45px 35px;
+    border-radius:28px;
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.06);
+    transition:.4s;
+}
+
+.pick-card:hover{
+    transform:translateY(-8px);
+    border-color:#00d4ff;
+    background:rgba(255,255,255,.06);
+}
+
+.pick-card h3{
+    font-size:24px;
+    margin-bottom:12px;
+}
+
+.pick-card p{
+    color:#b9b9c9;
+}
+
+/* NEWSLETTER */
+
+.newsletter{
+    padding:0 8% 120px;
+}
+
+.newsletter-content{
+    padding:80px 8%;
+    text-align:center;
+    border-radius:35px;
+    background:linear-gradient(to right,#111827,#1f2937);
+}
+
+.newsletter-content span{
+    color:#7c4dff;
+    letter-spacing:2px;
+}
+
+.newsletter-content h2{
+    font-size:50px;
+    margin:20px 0 35px;
+}
+
+.newsletter-box{
+    max-width:650px;
+    margin:auto;
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.newsletter-box input{
+    flex:1;
+    min-width:260px;
+    padding:18px 22px;
+    border:none;
+    border-radius:60px;
+    background:#0f172a;
+    color:white;
+    outline:none;
+}
+
+.newsletter-box button{
+    padding:18px 34px;
+    border:none;
+    border-radius:60px;
+    background:linear-gradient(to right,#7c4dff,#00d4ff);
+    color:white;
+    font-weight:600;
+    cursor:pointer;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .deal-content h1{
+        font-size:52px;
+    }
+
+    .section-title h2{
+        font-size:38px;
+    }
+
+    .banner-content h2{
+        font-size:42px;
+    }
+
+    .newsletter-content h2{
+        font-size:38px;
+    }
+
+}

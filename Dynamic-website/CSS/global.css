@@ -135,7 +135,85 @@ img{display:block; width:100%;}
 
     overflow:hidden;
 }
+/* HOT DEAL ANIMATION */
 
+.hot-deal{
+
+    position:relative;
+
+    text-decoration:none;
+
+    font-size:15px;
+    font-weight:700;
+
+    color:#ffd43b;
+    border:1px solid rgba(255,212,59,0.16);
+    padding:8px 15px;
+    border-radius:20px;
+
+    box-shadow:
+    0 0 25px rgba(255,212,59,0.10);
+
+    overflow:hidden;
+
+    transition:0.35s ease;
+
+    animation:floatGlow 3s ease-in-out infinite;
+}
+
+/* SHINE EFFECT */
+.hot-deal::before{
+
+    content:'';
+
+    position:absolute;
+
+    top:0;
+    left:-120%;
+
+    width:60%;
+    height:100%;
+
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.35),
+        transparent
+    );
+
+    transform:skewX(-25deg);
+
+    animation:shine 3.5s infinite;
+}
+
+.hot-deal:hover{
+
+    transform:translateY(-3px) scale(1.03);
+
+    color:white;
+
+    background:linear-gradient(
+        135deg,
+        rgba(255,212,59,0.32),
+        rgba(255,183,3,0.16)
+    );
+
+    box-shadow:
+    0 10px 35px rgba(255,212,59,0.18);
+}
+
+
+/* LIGHT SWEEP */
+@keyframes shine{
+
+    0%{
+        left:-120%;
+    }
+
+    100%{
+        left:160%;
+    }
+}
 .search-box input{
 
     border:none;
