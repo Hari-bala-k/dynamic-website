@@ -358,6 +358,24 @@ img{display:block; width:100%;}
 
     font-size:14px;
 }
+.social-icons{
+
+    display:flex;
+
+    gap:14px;
+
+    margin-top:20px;
+}
+
+.social-icons a{
+
+    color:#bdbdbd;
+
+    font-size:18px;
+
+    transition:0.3s ease;
+}
+.social-icons a:hover{color:oklch(93.64% 0.20193 109.753)}
 
 /* RESPONSIVE - keep exact breakpoints */
 @media(max-width:992px){
