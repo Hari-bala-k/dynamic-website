@@ -35,14 +35,6 @@
   background:oklch(93.64% 0.20193 109.753);
   color:black;
 }
-
-/* SECONDARY BUTTON HOVER */
-
-.secondary-btn:hover{
-  background:oklch(93.64% 0.20193 109.753);
-  color:black;
-}
-
 /* CATEGORY CARD HOVER */
 
 .category-card:hover{
