@@ -337,8 +337,8 @@ body{
     padding:18px 34px;
     border:none;
     border-radius:60px;
-    background:linear-gradient(to right,#7c4dff,#00d4ff);
-    color:white;
+    background:linear-gradient(to right,#55d31a,#6ce081);
+    color:rgb(6, 5, 5);
     font-weight:600;
     cursor:pointer;
 }
